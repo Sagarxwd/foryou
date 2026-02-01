@@ -36,7 +36,7 @@ const ValentineNote = ({ onFinish, onMenuClick }) => {
                 <motion.h1
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
-                    className="text-4xl md:text-7xl font-black text-rose-500 italic leading-[1.1] mb-4 drop-shadow-xl font-handwriting"
+                    className="text-4xl md:text-7xl font-black text-rose-500 leading-[1.1] mb-4 drop-shadow-xl font-handwriting"
                 >
                     A Valentine Note <span className="inline-block">💌</span>
                 </motion.h1>

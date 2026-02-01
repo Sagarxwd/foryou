@@ -56,7 +56,7 @@ const Letter = ({ onNext, onMenuClick }) => {
                         <div className="w-10 h-10 bg-rose-200 rounded-full flex items-center justify-center text-white shadow-md">
                             <span className="text-xl">💝</span>
                         </div>
-                        <h2 className="text-xl md:text-lg font-bold text-rose-400 font-script">Hey Your-Name</h2>
+                        <h2 className="text-xl md:text-lg font-bold text-rose-400 font-script">Hey Aaru</h2>
                     </div>
 
                     {/* Message Content */}
