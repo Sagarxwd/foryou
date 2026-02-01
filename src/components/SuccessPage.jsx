@@ -32,14 +32,14 @@ const SuccessPage = ({ onRestart, onMenuClick }) => {
                     animate={{ opacity: 1, y: 0 }}
                     className="text-rose-400 italic text-lg mb-1 font-script"
                 >
-                    the grand finale...
+                    a special delivery...
                 </motion.p>
                 <motion.h1
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     className="text-3xl md:text-5xl font-black text-rose-500 mb-2 drop-shadow-sm font-handwriting"
                 >
-                    One Last Valentine Thought
+                    Happy Valentine's Day! ✨
                 </motion.h1>
             </div>
 
