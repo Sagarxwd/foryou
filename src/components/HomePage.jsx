@@ -29,7 +29,7 @@ const HomePage = ({ onOpen, onMenuClick }) => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0, x: -20 }}
-            className="h-screen relative overflow-hidden flex flex-col items-center justify-center p-4 px-6 md:px-12 font-sans bg-gradient-to-br from-[#fff5f7] via-[#fffafa] to-[#ffe4e9]"
+            className="min-h-screen relative overflow-y-auto overflow-x-hidden flex flex-col items-center p-4 px-6 md:px-12 font-sans bg-gradient-to-br from-[#fff5f7] via-[#fffafa] to-[#ffe4e9] py-16 md:py-20"
         >
             {/* Animated Mesh Gradient Layer */}
             <motion.div
@@ -46,7 +46,7 @@ const HomePage = ({ onOpen, onMenuClick }) => {
             <MenuButton onClick={onMenuClick} />
 
             {/* Header Section */}
-            <div className="text-center mb-6 z-10 w-full max-w-4xl px-4">
+            <div className="text-center mb-6 z-10 w-full max-w-4xl px-4 flex flex-col items-center">
                 <motion.p
                     initial={{ opacity: 0, y: -10 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -59,11 +59,11 @@ const HomePage = ({ onOpen, onMenuClick }) => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.4, type: "spring" }}
-                    className="text-4xl md:text-6xl lg:text-7xl font-black text-rose-500 italic leading-[1.1] mb-4 drop-shadow-xl whitespace-nowrap relative font-handwriting"
+                    className="text-4xl md:text-6xl lg:text-7xl font-black text-rose-500 italic leading-[1.1] mb-6 drop-shadow-xl relative font-handwriting inline-block max-w-full break-words px-2"
                 >
                     Will You Be My Valentine
                     <span className="ml-2">?</span>
-                    <span className="absolute -bottom-2 left-0 w-full h-2 bg-rose-200/50 -rotate-1"></span>
+                    <span className="absolute -bottom-2 left-0 w-full h-2 bg-rose-200/50 -rotate-1 hidden md:block"></span>
                 </motion.h1>
 
                 {/* Central Heart */}

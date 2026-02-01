@@ -67,7 +67,7 @@ const MemoryGame = ({ onNext, onMenuClick }) => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="h-screen py-4 md:py-8 relative overflow-hidden flex flex-col items-center justify-center bg-[#FFF0F3]"
+            className="min-h-screen relative overflow-y-auto overflow-x-hidden flex flex-col items-center p-4 bg-[#FFF0F3] py-16 md:py-20"
         >
             <FloatingHearts />
 
@@ -135,11 +135,11 @@ const MemoryGame = ({ onNext, onMenuClick }) => {
                     whileHover={hasStarted ? { scale: 1.05, backgroundColor: "rgba(255, 228, 232, 1)" } : {}}
                     whileTap={hasStarted ? { scale: 0.95 } : {}}
                     className={`px-8 py-3 rounded-full font-bold text-lg shadow-sm font-heading transition-all relative z-30 ${hasStarted
-                            ? "bg-rose-50 text-rose-500 border-2 border-rose-200 cursor-pointer opacity-100"
-                            : "bg-gray-100/50 text-gray-400 border-2 border-gray-200 cursor-not-allowed opacity-50"
+                        ? "bg-rose-50 text-rose-500 border-2 border-rose-200 cursor-pointer opacity-100"
+                        : "bg-gray-100/50 text-gray-400 border-2 border-gray-200 cursor-not-allowed opacity-50"
                         }`}
                 >
-                    Reset Game 
+                    Reset Game
                 </motion.button>
 
                 <motion.button

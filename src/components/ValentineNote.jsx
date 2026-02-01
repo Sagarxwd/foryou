@@ -20,7 +20,7 @@ const ValentineNote = ({ onFinish, onMenuClick }) => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0, scale: 1.1, filter: "blur(10px)" }}
-            className="h-screen relative overflow-hidden flex flex-col items-center justify-center p-4 px-6 md:px-12 font-sans bg-gradient-to-br from-[#fff5f7] via-[#fffafa] to-[#ffe4e9]"
+            className="min-h-screen relative overflow-y-auto overflow-x-hidden flex flex-col items-center p-4 px-6 md:px-12 font-sans bg-gradient-to-br from-[#fff5f7] via-[#fffafa] to-[#ffe4e9] py-16 md:py-24"
         >
             <FloatingHearts />
 
@@ -36,7 +36,7 @@ const ValentineNote = ({ onFinish, onMenuClick }) => {
                 <motion.h1
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
-                    className="text-5xl md:text-7xl font-black text-rose-500 italic leading-[1.1] mb-4 drop-shadow-xl font-handwriting"
+                    className="text-4xl md:text-7xl font-black text-rose-500 italic leading-[1.1] mb-4 drop-shadow-xl font-handwriting"
                 >
                     A Valentine Note <span className="inline-block">💌</span>
                 </motion.h1>
@@ -44,7 +44,7 @@ const ValentineNote = ({ onFinish, onMenuClick }) => {
 
             {/* Note Container */}
             <motion.div
-                className="relative w-full max-w-4xl bg-white/30 backdrop-blur-sm border-2 border-rose-100 rounded-[2.5rem] p-12 md:p-20 shadow-[0_20px_60px_rgba(255,182,193,0.2)] flex flex-col items-center justify-center min-h-[50vh] cursor-pointer"
+                className="relative w-full max-w-4xl bg-white/30 backdrop-blur-sm border-2 border-rose-100 rounded-[2.5rem] p-8 md:p-20 shadow-[0_20px_60px_rgba(255,182,193,0.2)] flex flex-col items-center justify-center min-h-[40vh] md:min-h-[50vh] cursor-pointer"
                 onClick={handleOpen}
             >
                 {/* Envelope wrapper to handle depth */}

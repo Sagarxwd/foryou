@@ -10,7 +10,7 @@ const Letter = ({ onNext, onMenuClick }) => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="h-screen relative overflow-hidden flex flex-col items-center justify-center p-4 px-6 md:px-12 font-sans bg-gradient-to-br from-[#fff5f7] via-[#fffafa] to-[#ffe4e9]"
+            className="min-h-screen relative overflow-y-auto overflow-x-hidden flex flex-col items-center p-4 px-6 md:px-12 font-sans bg-gradient-to-br from-[#fff5f7] via-[#fffafa] to-[#ffe4e9] py-16 md:py-24"
         >
             <FloatingHearts />
 
@@ -26,7 +26,7 @@ const Letter = ({ onNext, onMenuClick }) => {
                 <motion.h1
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
-                    className="text-5xl md:text-7xl font-black text-rose-500 leading-[1.1] mb-4 drop-shadow-xl font-handwriting"
+                    className="text-4xl md:text-7xl font-black text-rose-500 leading-[1.1] mb-4 drop-shadow-xl font-handwriting"
                 >
                     A Valentine Note <span className="inline-block">💌</span>
                 </motion.h1>
@@ -37,7 +37,7 @@ const Letter = ({ onNext, onMenuClick }) => {
                 initial={{ opacity: 0, y: 50, scale: 0.9 }}
                 animate={{ opacity: 1, y: 0, scale: 1 }}
                 transition={{ delay: 0.3, duration: 0.8 }}
-                className="relative w-full max-w-4xl bg-[#ffeef2]/60 backdrop-blur-xl rounded-[1.5rem] border-2 border-rose-100 p-8 md:p-5 shadow-[0_20px_50px_rgba(255,182,193,0.4),0_10px_15px_rgba(255,182,193,0.2)] flex flex-col items-center z-10"
+                className="relative w-full max-w-4xl bg-[#ffeef2]/60 backdrop-blur-xl rounded-[1.5rem] border-2 border-rose-100 p-4 md:p-8 shadow-[0_20px_50px_rgba(255,182,193,0.4),0_10px_15px_rgba(255,182,193,0.2)] flex flex-col items-center z-10 my-4"
             >
                 {/* Inner White Paper */}
                 <div className="w-full bg-white/80 rounded-[1.5rem] p-3 md:p-5 relative overflow-visible shadow-sm">

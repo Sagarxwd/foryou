@@ -19,9 +19,9 @@ const SuccessPage = ({ onRestart, onMenuClick }) => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="h-screen py-4 md:py-8 px-4 relative overflow-hidden flex flex-col items-center justify-center bg-[#FFF1F2]"
+            className="min-h-screen relative overflow-y-auto overflow-x-hidden flex flex-col items-center bg-[#FFF1F2] py-16 md:py-20 px-4"
         >
-           <FloatingHearts/>
+            <FloatingHearts />
 
             <MenuButton onClick={onMenuClick} />
 
