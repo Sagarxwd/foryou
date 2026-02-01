@@ -48,7 +48,7 @@ const FinalPage = ({ onRestart, onSeal, onMenuClick }) => {
                 </div>
 
                 <div className="bg-white/70 rounded-xl p-4 md:p-6 font-handwriting text-lg md:text-lg text-gray-800 leading-relaxed shadow-inner border border-white/50">
-                    <p className="mb-3 md:mb-4 text-rose-500 italic">Hey Nabina,</p>
+                    <p className="mb-3 md:mb-4 text-rose-500 italic">Hey Your-Name,</p>
                     <p className="mb-2 md:mb-3 font-medium">This wasn't about perfection, just honesty.</p>
                     <p className="mb-2 md:mb-3 font-medium">I wanted you to feel appreciated today.</p>
                     <p className="mb-0 font-medium">Whatever comes next, I'm glad this moment exists.</p>
