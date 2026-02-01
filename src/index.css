@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+/* 1. Shrikhand -> Big retro title
+   2. Caveat -> The body letter text
+   3. Dancing Script -> The "Just because..." cursive text
+   4. Nunito -> Rounded buttons and names
+*/
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Nunito:wght@600;700;800&family=Shrikhand&display=swap');
+
+@theme {
+    --font-handwriting: "Caveat", cursive;
+    --font-heading: "Shrikhand", serif;
+    --font-script: "Dancing Script", cursive;
+    /* Added this for the sub-header */
+    --font-sans: "Nunito", sans-serif;
+}
+
+@layer base {
+    body {
+        @apply antialiased;
+        background-color: #FFF0F3;
+    }
+
+    /* Custom Pink Scrollbar */
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #FFF0F3;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: linear-gradient(to bottom, #fb7185, #ec4899);
+        border-radius: 10px;
+        border: 3px solid #FFF0F3;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(to bottom, #f43f5e, #db2777);
+    }
+}
