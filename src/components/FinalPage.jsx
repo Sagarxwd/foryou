@@ -48,7 +48,7 @@ const FinalPage = ({ onRestart, onSeal, onMenuClick }) => {
                 </div>
 
                 <div className="bg-white/70 rounded-xl p-4 md:p-6 font-handwriting text-lg md:text-lg text-gray-800 leading-relaxed shadow-inner border border-white/50">
-                    <p className="mb-3 md:mb-4 text-rose-500 italic">Hey Aaru,</p>
+                    <p className="mb-3 md:mb-4 text-rose-500 italic">Hey Stranger,</p>
                     <p className="mb-2 md:mb-3 font-medium">This wasn't about perfection, just honesty.</p>
                     <p className="mb-2 md:mb-3 font-medium">I wanted you to feel appreciated today.</p>
                     <p className="mb-0 font-medium">Whatever comes next, I'm glad this moment exists.</p>
@@ -56,7 +56,9 @@ const FinalPage = ({ onRestart, onSeal, onMenuClick }) => {
 
                 <div className="flex flex-col md:flex-row justify-between items-center mt-6 md:mt-8 gap-4">
                     <p className="text-[8px] md:text-[10px] text-rose-400/80 font-sans italic max-w-[200px] leading-tight text-center md:text-left">
-                        Bye Bye , Good night    Made by Swgarxwd
+                        Bye Bye , Good night    
+                        <br />
+                        Made by Swgarxwd
                     </p>
 
                     <div className="flex gap-3">
