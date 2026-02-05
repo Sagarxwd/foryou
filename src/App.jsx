@@ -16,6 +16,9 @@ import Sidebar from "./components/Sidebar";
 import track1 from "./assets/audio/Jeena Jeena Badlapur Varun_320(PagaiWorld.com).mp3";
 import track2 from "./assets/audio/Tera Deedar Hua From Jannat 2-320kbps.mp3";
 import track3 from "./assets/audio/Baatein Karo-320kbps.mp3";
+import track4 from "./assets/audio/Blue.mp3";
+import track5 from "./assets/audio/Co2.mp3";
+import track6 from "./assets/audio/I_Think_They_Call_This_Love_Cover.mp3";
 
 const SONGS = [
   {
@@ -23,6 +26,7 @@ const SONGS = [
     subtitle: "Because closeness matters 🤍",
     color: "#bbf7d0",
     bgColor: "bg-[#E8F5E9]",
+    innerBg: "bg-[#E8F5E9]",
     src: track1
   },
   {
@@ -30,6 +34,7 @@ const SONGS = [
     subtitle: "When emotions say more than words 💕",
     color: "#bfdbfe",
     bgColor: "bg-[#E3F2FD]",
+    innerBg: "bg-[#E3F2FD]",
     src: track2
   },
   {
@@ -37,7 +42,32 @@ const SONGS = [
     subtitle: "Some feelings feel calm and deep 💫",
     color: "#fecaca",
     bgColor: "bg-[#F5E6D3]",
+    innerBg: "bg-[#FFE4E9]",
     src: track3
+  },
+  {
+    title: "Blue",
+    subtitle: "A melody that stays with you 💙",
+    color: "#93c5fd",
+    bgColor: "bg-[#EFF6FF]",
+    innerBg: "bg-[#DBEAFE]",
+    src: track4
+  },
+  {
+    title: "Co2",
+    subtitle: "Breathe in the magic ✨",
+    color: "#a7f3d0",
+    bgColor: "bg-[#ECFDF5]",
+    innerBg: "bg-[#D1FAE5]",
+    src: track5
+  },
+  {
+    title: "Think They Call This Love",
+    subtitle: "A sweet cover for a sweet day 🌸",
+    color: "#fbcfe8",
+    bgColor: "bg-[#FFF1F2]",
+    innerBg: "bg-[#FFE4E6]",
+    src: track6
   },
 ];
 

@@ -6,7 +6,7 @@ import MenuButton from "./MenuButton";
 import FloatingHearts from "./FloatingHearts";
 
 
-const SongCard = ({ title, subtitle, color, bgColor, delay, index, isPlaying, onToggle }) => {
+const SongCard = ({ title, subtitle, color, bgColor, innerBg, delay, index, isPlaying, onToggle }) => {
     const rotation = index % 2 === 0 ? -1 : 1;
 
     return (
@@ -42,7 +42,7 @@ const SongCard = ({ title, subtitle, color, bgColor, delay, index, isPlaying, on
             </div>
 
             {/* Inner Pink Zone */}
-            <div className={`w-full ${title === "Baatein Karo" ? "bg-[#FFE4E9]" : title === "Jeena Jeena" ? "bg-[#E8F5E9]" : "bg-[#E3F2FD]"} rounded-[1.2rem] p-6 flex flex-col items-center border border-white/60 shadow-inner relative`}>
+            <div className={`w-full ${innerBg || "bg-[#FFE4E9]"} rounded-[1.2rem] p-6 flex flex-col items-center border border-white/60 shadow-inner relative`}>
                 <h3 className="text-3xl md:text-3xl font-bold text-gray-800 mb-1 font-heading tracking-tight">
                     {title}
                 </h3>
